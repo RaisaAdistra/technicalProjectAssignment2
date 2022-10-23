@@ -12,7 +12,7 @@
     <nav>
       <nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
-      <a class="navbar-brand" href="#">Adis' Comfort Movies</a>
+      <a class="navbar-brand" href="#">Adis' (Not) Comfort Movies</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,17 +44,17 @@
           </li>
         </ul>
             
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="searchValue" id="input-search">
+          <button class="btn btn-outline-success" type="submit" onclick="OnSearch(event)">Search</button>
+        </form>
+      </div>
     </div>
-  </div>
 </nav>
-  </nav>
+    
 
-<div class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="container mt-4">
+      <div class="row row-cols-1 row-cols-md-3 g-4" id="list-movies">
         <div class="col">
           <div class="card h-100">
             <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgYD09wli84HEzP0r3isFJ9pkP_X1VvL_AP8huS2uVudxnjf_S" class="card-img-top" alt="...">
@@ -163,7 +163,20 @@
         </div>
       </div>      
 
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      <footer class="text-center text-black fixed-bottom" style="background-color: #21081a;">
+        
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(243, 242, 242, 0.973);">
+          © 2020 Copyright: TPA#2 Adis Sudut Aman
+        </div><div id="error-not-found" class="container mt-5 bg-danger" style="display: none;">
+          <h1>Movie Not Found</h1>
+      </div>
+        <!-- Copyright -->
+      </footer>
+
+      <div id="error-not-found" class="container mt-5 bg-danger" style="display: center;">
+        <h1>Movie Not Found</h1>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
