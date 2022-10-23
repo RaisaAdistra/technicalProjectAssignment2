@@ -592,9 +592,9 @@ function ShowMovies(keyword="") {
         <div class="card">
           <img src="${element.poster_path}" class="card-img-top" alt="img-cat">
           <div class="card-body">
-            <h3 class="card-title">${element.original_title}</h3>
-            <h6 class="card-title"> Released ${element.release_date} ‧ Rate ${element.vote_average}</h6>
-            <p class="card-text">${element.overview}</p>
+            <h2 class="text-center card-title">${element.original_title}</h2>
+            <h6 class="text-center card-title"> Released ${element.release_date} ‧ Rate ${element.vote_average}</h6>
+            <p class="text-center card-text">${element.overview}</p>
           </div>
         </div>
       </div>
